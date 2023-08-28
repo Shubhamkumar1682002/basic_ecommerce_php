@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>E-commerce Website</title>
+  
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <style>
+        body {
+            background-color: #f8f9fa;
+        }
+
+        .container {
+            margin-top: 20px;
+        }
+
+        .navbar {
+            background-color: #2874f0;
+            color: #ffffff;
+        }
+
+        .card-columns {
+            column-count: 3;
+        }
+
+        .card {
+            border: none;
+            margin-bottom: 20px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s;
+        }
+
+        .card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+        }
+
+        .card a {
+            text-decoration: none;
+        }
+
+        .card-img-top {
+            height: 300px;
+            object-fit: cover;
+        }
+
+        h1 {
+            text-align: center;
+            margin-top: 50px;
+            margin-bottom: 30px;
+            color: #2874f0;
+            font-weight: bold;
+        }
+
+        .sidebar {
+            background-color: #ffffff;
+            padding: 20px;
+            height: 100%;
+            border-radius: 5px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        .sidebar ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        .sidebar li {
+            margin-bottom: 10px;
+        }
+
+        .sidebar a {
+            text-decoration: none;
+            color: #343a40;
+            display: block;
+            padding: 10px;
+            border-radius: 5px;
+            transition: background-color 0.3s;
+        }
+
+        .sidebar a:hover {
+            background-color: #007bff;
+            color: #ffffff;
+        }
+
+        .sidebar a.active {
+            background-color: #007bff;
+            color: #ffffff;
+        }
+
+        footer {
+            background-color: #343a40;
+            color: #ffffff;
+            padding: 20px;
+            text-align: center;
+            margin-top: 30px;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Welcome to our E-commerce Website <br>
+        Appna Market</h1>
+ 
+        <form action="search.php" method="GET">
+            <div class="input-group mb-3">
+                <input type="text" name="query" class="form-control" placeholder="Search products">
+                <div class="input-group-append">
+                    <button class="btn btn-primary" type="submit">Search</button>
+                </div>
+            </div>
+        </form>
+        <div class="row">
+            <div class="col-md-3">
+                <div class="sidebar">
+                    <ul>
+                        <li><a href="product_catalog.php" class="active">Product Catalog</a></li>
+                        <li><a href="cart.php">Cart</a></li>
+                        <li><a href="userlogin.php">User Login</a></li>
+                        <li><a href="User Registration.php">User Registration</a></li>
+                        <li><a href="rating.php">Product Ratings</a></li>
+                        <li><a href="sales.php">Sales and Promotions</a></li>
+                        <li><a href="colthes.php">All Codes</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col-md-9">
+                <div class="card-columns">
+               
+                    <div class="card">
+                        <a href="image_detalis1.php">
+                            <img src="https://m.media-amazon.com/images/I/71ISIssoVFL.SX522.jpg" alt="Electronics" class="card-img-top img-fluid">
+                        </a>
+                    </div>
+                    <div class="card">
+                        <a href="image_detalis2.php">
+                            <img src="https://m.media-amazon.com/images/I/71nzWfUAt+L.SX522.jpg" alt="Electronics" class="card-img-top img-fluid">
+                        </a>
+                    </div>
+                    <div class="card">
+                        <a href="image_detalis3.php">
+                            <img src="https://4.imimg.com/data4/PM/KH/MY-34794816/lcd.png" alt="Electronics" class="card-img-top img-fluid">
+                        </a>
+                    </div>
+                    <div class="card">
+                        <a href="image_detalis4.php">
+                            <img src="https://m.media-amazon.com/images/I/61f1YfTkTDL._AC_SL1500_.jpg" alt="Electronics" class="card-img-top img-fluid">
+                        </a>
+                    </div>
+                    <div class="card">
+                        <a href="image_detalis.php">
+                            <img src="https://m.media-amazon.com/images/I/81F7OfBTCvL._AC_SL1500_.jpg" alt="Electronics" class="card-img-top img-fluid">
+                        </a>
+                    </div>
+                    <div class="card">
+                        <a href="image_detalis.php">
+                            <img src="https://m.media-amazon.com/images/I/71Sa3dqTqzL._AC_SL1500_.jpg" alt="Electronics" class="card-img-top img-fluid">
+                        </a>
+                    </div>
+                    <div class="card">
+                        <a href="image_detalis.php">
+                            <img src="https://m.media-amazon.com/images/I/81v6g1MtqSL._AC_SL1500_.jpg" alt="Electronics" class="card-img-top img-fluid">
+                        </a>
+                    </div>
+                    <div class="card">
+                        <a href="image_detalis.php">
+                            <img src="https://m.media-amazon.com/images/I/71sfwLKeQcL._SL1500_.jpg" alt="Electronics" class="card-img-top img-fluid">
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer>
+        <p>&copy; 2023 Apana Market. All rights reserved.</p>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
